@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: medical-chatbot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run medibot.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.18
